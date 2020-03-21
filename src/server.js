@@ -26,8 +26,7 @@ app.listen(process.env.PORT, () => {
 })
 
 Mongoose.connect(MONGO_DB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+  useNewUrlParser: true
 })
 
 Mongoose.connection.on(
