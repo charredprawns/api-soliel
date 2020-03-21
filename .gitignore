@@ -1,0 +1,13 @@
+node_modules
+yarn-error.log
+.vscode
+dist
+tmp
+neo/data/*
+neo/logs/*
+neo/test/*
+.env
+.DS_Store
+bingo
+app.yaml
+*.secrets.yml
