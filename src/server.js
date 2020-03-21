@@ -9,7 +9,7 @@ const { MONGO_DB_URI } = process.env
 const app = express()
 
 // Add middleware
-app.use('*', cors())
+// app.use('*', cors())
 app.use(bodyParserMiddleware.json())
 app.use(bodyParserMiddleware.urlencoded({ extended: true }))
 
@@ -26,7 +26,8 @@ app.listen(process.env.PORT, () => {
 })
 
 Mongoose.connect(MONGO_DB_URI, {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 })
 
 Mongoose.connection.on(
