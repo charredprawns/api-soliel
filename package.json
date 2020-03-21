@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "NODE_PATH=src nodemon -r dotenv/config src/server.js",
-    "start": "NODE_ENV=production NODE_PATH=src nodemon  node src/server.js",
+    "start": "NODE_ENV=production NODE_PATH=src node src/server.js",
     "debug": "NODE_PATH=src nodemon -r dotenv/config --inspect src/server.js"
   },
   "devDependencies": {
