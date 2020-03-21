@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "NODE_PATH=src nodemon -r dotenv/config src/server.js",
+    "start": "MODE_PATH=src nodemon dotenv/config src/server.js",
     "debug": "NODE_PATH=src nodemon -r dotenv/config --inspect src/server.js"
   },
   "devDependencies": {
