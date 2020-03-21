@@ -29,8 +29,7 @@ Mongoose.connect(MONGO_DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-
-Mongoose.connection.on(
-  'error',
-  console.error.bind(console, 'connection error:')
-)
+  .then(() => console.log('DB Connected!'))
+  .catch(err => {
+    console.log(Error, err.message)
+  })
