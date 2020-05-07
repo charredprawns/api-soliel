@@ -1,5 +1,3 @@
-const logger = require('./logger')
-
 module.exports = (error, description, code = 400, res = false) => {
   if (code === null) {
     code = 400
@@ -10,8 +8,6 @@ module.exports = (error, description, code = 400, res = false) => {
     error,
     description
   }
-
-  logger.error(JSON.stringify(response, null, 2))
 
   // If no res object was provided, return response
   if (!res) {
